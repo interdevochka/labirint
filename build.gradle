@@ -1,0 +1,27 @@
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.testng:testng:6.9.10'
+    implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
+    implementation 'org.hamcrest:hamcrest:2.2'
+    implementation 'commons-net:commons-net:3.4'
+    implementation 'org.apache.httpcomponents:httpclient:4.5.10'
+    implementation 'org.subethamail:subethasmtp:3.1.7'
+    implementation 'ru.lanwen.verbalregex:java-verbal-expressions:1.6'
+    implementation 'com.newrelic.logging:logback:1.0-rc3'
+    implementation 'org.hibernate:hibernate-core:5.3.15.Final'
+    implementation 'mysql:mysql-connector-java:8.0.18'
+    implementation 'biz.futureware.mantis:mantis-axis-soap-client:1.2.19'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'org.apache.httpcomponents:fluent-hc:4.5.10'
+}
+test {
+    useTestNG {
+        /*suites 'src/test/resources/testng.xml'*/
+    }
+
+}
